@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<monodroid>
+  <android-ndk path="/Users/toheebbadru/Library/Developer/Xamarin/android-ndk/android-ndk-r14b" />
+  <android-sdk path="/Users/toheebbadru/Library/Developer/Xamarin/android-sdk-macosx" />
+  <java-sdk path="/Users/toheebbadru/Library/Developer/Xamarin/jdk/microsoft_dist_openjdk_1.8.0.25" />
+</monodroid>

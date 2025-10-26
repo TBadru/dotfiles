@@ -1,0 +1,10 @@
+{
+	"optOut": false,
+	"lastUpdateCheck": 1551633713393,
+	"update": {
+		"latest": "8.2.2",
+		"current": "6.5.2",
+		"type": "major",
+		"name": "phonegap"
+	}
+}
