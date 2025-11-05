@@ -9,3 +9,5 @@ stetic/
 Unreal Engine/
 uv/
 xbuild/
+.vs/
+raycast/
