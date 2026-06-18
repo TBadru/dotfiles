@@ -1,14 +1,21 @@
-.mono/
-btop/
-configstore/
-filezilla/
-mise/
-NuGet/
-powershell/
-stetic/
-Unreal Engine/
-uv/
-xbuild/
-.vs/
-raycast/
-iterm2/
+# OS files
+
+.DS_Store
+Thumbs.db
+
+
+# Environment files
+
+.env
+.env.*
+
+
+# Temporary files
+
+tmp/
+temp/
+
+# Package manager caches
+
+.npm/
+.pnpm-store/
