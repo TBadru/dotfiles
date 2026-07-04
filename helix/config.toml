@@ -8,12 +8,11 @@ cursor-line = "error"
 other-lines = "error"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [keys.normal]
 ";" = "command_mode"
-"V" = "@xv"
-"Y" = "@xy"
+":" = "command_mode"
 "C-p" = "file_picker_in_current_directory"
 
 [keys.insert]

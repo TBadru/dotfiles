@@ -5,32 +5,33 @@
 # brew bundle
 # ```
 
-cask "bitwarden"
-cask "brave-browser"
-cask "raycast"
-cask "alt-tab"
-cask "localsend"
-brew "ripgrep"
+# CLI tools
 brew "git"
-brew "curl"
+brew "ripgrep"
 brew "fd"
 brew "bat"
 brew "fzf"
 brew "wget"
 brew "fastfetch"
-brew "bash"
-brew "zsh"
-brew "tailscale"
-brew "openssl@3"
 brew "lazygit"
-brew "docker"
-cask "wezterm"
+brew "openssl@3"
 brew "go"
 brew "lua"
 brew "luajit"
 brew "neovim"
 brew "nvm"
 brew "oh-my-posh"
-cask "font-jetbrains-mono"
+brew "tailscale"
+
+# GUI apps
+cask "bitwarden"
+cask "brave-browser"
+cask "raycast"
+cask "alt-tab"
+cask "localsend"
+cask "wezterm"
+cask "docker"
+
+# Fonts
 cask "font-jetbrains-mono-nerd-font"
 cask "font-fira-code-nerd-font"
