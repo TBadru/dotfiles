@@ -1,3 +1,4 @@
+#
 # Homebrew Bundle
 #
 # ```
@@ -6,32 +7,41 @@
 # ```
 
 # CLI tools
-brew "git"
-brew "ripgrep"
-brew "fd"
 brew "bat"
-brew "fzf"
-brew "wget"
+brew "coreutils"
 brew "fastfetch"
-brew "lazygit"
-brew "openssl@3"
+brew "fd"
+brew "fzf"
+brew "git"
 brew "go"
+brew "grc"
+brew "hugo"
+brew "jq"
+brew "lazygit"
 brew "lua"
 brew "luajit"
+brew "mysql", restart_service: :change
 brew "neovim"
 brew "nvm"
 brew "oh-my-posh"
+brew "openssl@3"
+brew "ripgrep"
 brew "tailscale"
+brew "tmux"
+brew "tree"
+brew "wget"
+brew "zsh-completions"
 
 # GUI apps
+cask "alt-tab"
 cask "bitwarden"
 cask "brave-browser"
-cask "raycast"
-cask "alt-tab"
-cask "localsend"
-cask "wezterm"
 cask "docker"
+cask "localsend"
+cask "raycast"
+cask "wezterm"
 
 # Fonts
-cask "font-jetbrains-mono-nerd-font"
+
 cask "font-fira-code-nerd-font"
+cask "font-jetbrains-mono-nerd-font"
