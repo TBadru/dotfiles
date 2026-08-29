@@ -1,8 +1,3 @@
--- This removes the incompatible setting:
--- main = 'nvim-treesitter.configs'
-
--- It also replaces the removed ensure_installed, auto_install, highlight, and legacy indent options with the new API.
-
 -- Synchronize and update:
 -- nvim --headless "+Lazy! sync" "+TSUpdate" "+qa"
 
@@ -38,7 +33,7 @@ local parsers = {
 return {
   'nvim-treesitter/nvim-treesitter',
 
-  -- The rewritten plugin must not be lazy-loaded.
+  branch = 'main',
   lazy = false,
   build = ':TSUpdate',
 
@@ -47,19 +42,12 @@ return {
 
     treesitter.setup {}
 
-    -- Replaces the old ensure_installed option.
     treesitter.install(parsers)
 
-    -- Highlight buffers when a compatible parser is available.
     vim.api.nvim_create_autocmd('FileType', {
       callback = function(args)
         pcall(vim.treesitter.start, args.buf)
-      end,
-    })
 
-    -- Enable Treesitter indentation except for Ruby.
-    vim.api.nvim_create_autocmd('FileType', {
-      callback = function(args)
         if vim.bo[args.buf].filetype ~= 'ruby' then
           vim.bo[args.buf].indentexpr =
             "v:lua.require'nvim-treesitter'.indentexpr()"
@@ -68,5 +56,3 @@ return {
     })
   end,
 }
-
---
