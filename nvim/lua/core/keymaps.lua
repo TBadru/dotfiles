@@ -136,3 +136,7 @@ vim.keymap.set('n', '<leader>f', function() require('flash').jump() end, { desc 
 vim.keymap.set('n', '<leader>rn', function()
   return ':IncRename ' .. vim.fn.expand('<cword>')
 end, { expr = true, desc = 'Incremental Rename Symbol' })
+
+vim.keymap.set('n', '<leader>tt', '<cmd>ToggleTerm<cr>', {
+  desc = 'Toggle terminal',
+})
