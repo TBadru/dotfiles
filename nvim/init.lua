@@ -33,6 +33,7 @@ require('lazy').setup {
   require 'plugins.debug',
   require 'plugins.enhancements',
   require 'plugins.markdown-preview',
+  require 'plugins.smear-cursor',
 }
 
 -- The line beneath this is called `modeline`. See `:help modeline`
