@@ -1,0 +1,52 @@
+[push]
+  default = simple
+  followTags = true
+
+[rebase]
+  autosquash = true
+
+[pull]
+  ff = only
+
+[user]
+    name = Toheeb Badru
+	email = toheebbadru97@yahoo.com
+
+[credential]
+  helper = osxkeychain
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true
+    light = false
+
+[alias]
+    co = checkout
+    br = branch
+    st = status
+    cm = commit
+    lg = log --oneline --graph --decorate --all
+    c = commit -m
+    blame = blame -w -C -C -C
+	cleanup = !git branch --merged | grep -v main | xargs git branch -d
+
+[merge]
+    conflictstyle = diff3
+    tool = nvim
+
+[mergetool "nvim"]
+  cmd = nvim -f -c \"Gdiffsplit!\" \"$MERGED\"
+
+[commit]
+    verbose = true
+
+[init]
+	defaultBranch = main
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
