@@ -43,8 +43,10 @@ Markdown-preview Plugin requires [nodejs](https://github.com/nodejs/node)
 │           ├── markdown-preview.lua
 │           ├── misc.lua
 │           ├── neotree.lua
+│           ├── smear-cursor.lua
 │           ├── statusline.lua
 │           ├── telescope.lua
+│           ├── toggleterm.lua
 │           └── treesitter.lua
 └── README.md
 ```
